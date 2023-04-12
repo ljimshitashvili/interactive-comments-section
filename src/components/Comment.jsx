@@ -1,8 +1,22 @@
 import { useState } from "react";
-import styled from "styled-component";
+import styled from "styled-components";
+import amyRobsonImg from "/public/avatars/image-amyrobson.png";
 
 function Comment() {
-  return <CommContainer />;
+  return (
+    <CommContainer>
+      <div className="userInfoContainer">
+        <img src={amyRobsonImg} alt="User avatar" />
+        <h1>amyrobson</h1>
+        <h2>1 month ago</h2>
+      </div>
+      <p>
+        Impressive! Though it seems the drag feature could be improved. But
+        overall it looks incredible. You’ve nailed the design and the
+        responsiveness at various breakpoints works really well.
+      </p>
+    </CommContainer>
+  );
 }
 
 export default Comment;
